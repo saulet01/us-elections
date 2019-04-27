@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSE457: Assignment 2</title>
+    <link rel="stylesheet" href="public/css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+    <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+    <script type="text/javascript" src="bower_components/d3-tip/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/animate.min.css">
+</head>
+
+<body>
+  <!--  jumbotron : https://getbootstrap.com/docs/4.0/components/jumbotron/ -->
+  <div class="jumbotron shadow mb-5 bg-white rounded">
+    <h4 class="display-4 text-center wow fadeInDown" data-wow-delay="0.2s">US Presidential Elections from 1940 to 2016</h4>
+    <hr class="my-4">
+    <p class="lead text-center wow bounceIn" data-wow-delay="0.8s">Name: Saulet Yskak&nbsp;&nbsp;&nbsp;&nbsp; E-Mail: saulet@wustl.edu&nbsp;&nbsp;&nbsp;&nbsp; UID: 467511</p>
+  </div>
+
+  <div class="yearShow ml-4">Selected Year: </div>
+
+<div id="year-chart" class="view">
+</div>
+
+<div id = "brush-selection" class = "view">
+  <h3 class="view mb-3">Brush selection is: </h3>
+  <div id="listItems"></div>
+</div>
+
+<div id = "electoral-vote" class = "view ml-4">
+</div>
+
+<div id = "votes-percentage" class = "view ml-4">
+</div>
+
+<div id = "colorRange" class = "view ml-5">
+</div>
+
+<div id = "tileChart" class = "view ml-4">
+  <div id="legend" class = "view"></div>
+  <div id = "tiles" class = "view"></div>
+</div>
+
+<div class="container fullView mb-4" id="hiding1">
+  <hr class="my-4">
+  <h1 class="" id="presidentWinner">United States Presidential Election Winner</h1>
+  <hr class="my-4">
+  <div class="row">
+    <div class="col-lg-3">
+      <img class="img-thumbnail shadow-sm" src="" alt="" id="presidentImage">
+    </div>
+    <div class="col-lg-9">
+      <a href="" class="" id="presidentParty"></a>
+      <h3 id="presidentName" class="mt-1"></h3>
+      <p class="text-justify" id="textPresident"></p>
+      <span>Source: </span><a href="" id="presidentLink"></a>
+    </div>
+  </div>
+</div>
+
+<script type="application/javascript" src="public/js/information.js"></script>
+<script type="application/javascript" src="public/js/tileChart.js"></script>
+<script type="application/javascript" src="public/js/electoralVoteChart.js"></script>
+<script type="application/javascript" src="public/js/yearChart.js"></script>
+<script type="application/javascript" src="public/js/votePercentageChart.js"></script>
+<script type="application/javascript" src="public/js/brushSelection.js"></script>
+<script type="application/javascript" src="public/js/main.js"></script>
+<script type="application/javascript" src="public/js/wow.min.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>
