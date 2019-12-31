@@ -3,52 +3,53 @@ body {
     overflow-x: hidden;
 }
 
-#hiding1{
-  display: none;
+#hiding1 {
+    display: none;
 }
 
-#presidentImage{
-  transition-duration: .3s;
+#presidentImage {
+    transition-duration: .3s;
 }
 
-#presidentImage:hover{
-  transform: scale(1.1);
+#presidentImage:hover {
+    transform: scale(1.1);
 }
 
-.jumbotron{
-  background-image: url('../../images/jumbotron.jpg');
-  background-size: contain;
-  max-height: 258px;
-  background-repeat: no-repeat;
+.jumbotron {
+    background-image: url('../../images/jumbotron.jpg');
+    background-size: cover;
+    /* max-height: 258px; */
+    background-repeat: no-repeat;
 }
 
-.list-group{
-  width: 270px;
+.list-group {
+    width: 270px;
 }
 
-.list-group-item{
-  transition-duration: .2s;
+.list-group-item {
+    transition-duration: .2s;
 }
 
-.list-group-item:hover{
-  background-color: #167FFB;
-  color: #FFFFFF;
+.list-group-item:hover {
+    background-color: #167FFB;
+    color: #FFFFFF;
 }
 
 h1 {
     font-family: "Arvo";
-    font-size:30px;
+    font-size: 30px;
     color: #464646;
     margin: 0px;
     padding: 0px;
     margin-left: 20px;
 }
 
-.info{
+.info {
     margin-left: 20px;
 }
-.yearShow{
-  font-size: 25px;
+
+.yearShow {
+    font-size: 25px;
 }
 
 .tile {
@@ -56,33 +57,40 @@ h1 {
     stroke-width: 2;
 }
 
-.yeartext, .tilestext, .brushtext{
-    text-anchor:middle;
+.yeartext,
+.tilestext,
+.brushtext {
+    text-anchor: middle;
     font-size: 14px;
     fill: #565656;
     stroke-width: 0.1px;
     /*stroke: #e5e5e5;*/
 }
 
-.electoralVotesNote, .votesPercentageNote{
-    text-anchor:middle;
+.electoralVotesNote,
+.votesPercentageNote {
+    text-anchor: middle;
     font-size: 16px;
 }
 
-.electoralVoteText, .votesPercentageText{
+.electoralVoteText,
+.votesPercentageText {
     font-size: 18px;
 }
-.end{
-    text-anchor:end;
+
+.end {
+    text-anchor: end;
 }
 
-.nomineeInfoText{
+.nomineeInfoText {
     font-size: 36px;
 }
-.Axis{
+
+.Axis {
     stroke: #eee;
     stroke-width: 4;
 }
+
 .content {
     display: inline-block;
     float: left;
@@ -93,70 +101,75 @@ h1 {
 .sideBar {
     display: inline-block;
     width: 23%;
-    float:right;
+    float: right;
 }
 
-.electoralVotes{
+.electoralVotes {
     stroke: #eee;
 }
 
-.middlePoint{
+.middlePoint {
     stroke: #eee;
 }
 
-.fullView{
+.fullView {
     display: inline-block;
     width: 100%;
 }
 
-.yearChart{
+.yearChart {
     stroke: #FFF;
 }
 
-.lineChart{
-    stroke:#000;
+.lineChart {
+    stroke: #000;
     stroke-dasharray: 4;
 }
 
-.republican{
+.republican {
     fill: #de2d26;
     color: #de2d26;
-    text-anchor:end;
-}
-.democrat{
-    fill: #3182bd;
-    text-anchor:start;
-    color: #3182bd;
-}
-.independent{
-    fill: #45AD6A;
-    color: #45AD6A;
-    text-anchor:start;
+    text-anchor: end;
 }
 
-.votesPercentage{
+.democrat {
+    fill: #3182bd;
+    text-anchor: start;
+    color: #3182bd;
+}
+
+.independent {
+    fill: #45AD6A;
+    color: #45AD6A;
+    text-anchor: start;
+}
+
+.votesPercentage {
     stroke: #eee;
 }
 
-.highlighted{
-    stroke: #404040;;
-    stroke-width:4;
+.highlighted {
+    stroke: #404040;
+    ;
+    stroke-width: 4;
 }
 
 .brush .selection {
     fill-opacity: .5;
 }
 
-.selected{
-    stroke: #404040;;
-    stroke-width:4;
-    r:25px;
+.selected {
+    stroke: #404040;
+    ;
+    stroke-width: 4;
+    r: 25px;
 }
 
-h2{
+h2 {
     -webkit-margin-before: 5px;
-    -webkit-margin-after:  5px;
+    -webkit-margin-after: 5px;
 }
+
 .d3-tip {
     /*line-height: 5;*/
     padding-left: 10px;
@@ -169,22 +182,25 @@ h2{
     border-radius: 10px;
     pointer-events: none;
 }
-.tooltip-title{
-    font-size:18px;
+
+.tooltip-title {
+    font-size: 18px;
     font-family: "Arial Black";
 
 }
 
 @keyframes animate {
-  0%{
-    opacity: 0;
-  }
-  50%{
-    opacity: 0.5;
-  }
-  100%{
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Creates a small triangle extender for the tooltip */
@@ -233,11 +249,12 @@ h2{
     left: 100%;
 }
 
-h3{
-    text-anchor:middle;
+h3 {
+    text-anchor: middle;
     font-size: 25px;
 }
 
-.timeStart, .timeFinish{
-  font-weight: bold;
+.timeStart,
+.timeFinish {
+    font-weight: bold;
 }
